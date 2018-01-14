@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import org.controlsfx.glyphfont.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.MainController">
+	<top>
+		<BorderPane BorderPane.alignment="CENTER">
+			<left>
+
+
+				<HBox prefHeight="30.0" BorderPane.alignment="CENTER">
+					<children>
+
+						<JFXButton fx:id="NewItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#NewFile" text="New">
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="16.0" icon="file"
+									textFill="BLACK" />
+							</graphic>
+
+						</JFXButton>
+						<Separator orientation="VERTICAL" prefHeight="200.0"
+							styleClass="sep" />
+						<JFXButton fx:id="OpenItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#OpenFile" text="Open...">
+
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="16.0" icon="folder"
+									textFill="BLACK" />
+							</graphic>
+						</JFXButton>
+						<Separator orientation="VERTICAL" prefHeight="200.0"
+							styleClass="sep" />
+						<JFXButton fx:id="SaveItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#SaveFile" text="Save">
+
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="16.0" icon="save"
+									textFill="BLACK" />
+							</graphic>
+						</JFXButton>
+
+						<JFXButton fx:id="SaveAsItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#SaveAsFile" text="Save As...">
+
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="16.0" icon="save"
+									textFill="BLACK" />
+							</graphic>
+						</JFXButton>
+						<Separator orientation="VERTICAL" prefHeight="200.0"
+							styleClass="sep" />
+						<JFXButton fx:id="redoItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#redo" text="Redo">
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="16.0" icon="repeat"
+									textFill="BLACK" />
+							</graphic>
+						</JFXButton>
+
+						<JFXButton fx:id="undoItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#undo" text="Undo">
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="16.0" icon="undo"
+									textFill="BLACK" />
+							</graphic>
+						</JFXButton>
+						<Separator orientation="VERTICAL" prefHeight="200.0"
+							styleClass="sep" />
+					</children>
+
+				</HBox>
+			</left>
+			<right>
+				<HBox prefHeight="30.0" BorderPane.alignment="CENTER">
+					<children>
+
+						<JFXButton fx:id="ExitItem" buttonType="RAISED"
+							mnemonicParsing="false" onAction="#quit" text="Exit">
+
+							<graphic>
+								<Glyph fontFamily="FontAwesome" fontSize="18.0" icon="close"
+									textFill="RED" />
+							</graphic>
+						</JFXButton>
+					</children>
+
+				</HBox>
+			</right>
+		</BorderPane>
+	</top>
+
+
+
+
+
+
+
+	<center>
+		<TextArea fx:id="Text" prefHeight="600.0" wrapText="true"
+			BorderPane.alignment="CENTER" />
+
+	</center>
+	<bottom>
+		<VBox prefHeight="20.0">
+			<children>
+				<BorderPane>
+					<left>
+						<VBox BorderPane.alignment="CENTER">
+							<children>
+								<Label fx:id="Status" wrapText="true" />
+
+							</children>
+						</VBox>
+					</left>
+					<right>
+						<HBox BorderPane.alignment="CENTER">
+							<children>
+								<Label fx:id="Count" />
+							</children>
+						</HBox>
+					</right>
+				</BorderPane>
+
+			</children>
+
+		</VBox>
+	</bottom>
+	<right />
+
+
+
+</BorderPane>

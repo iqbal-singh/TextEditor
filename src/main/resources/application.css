@@ -1,0 +1,31 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+
+
+TextArea {
+   -fx-font-family: Arial;
+   -fx-font-size: 12pt;
+}
+Label{
+	-fx-text-fill:black;
+	 -fx-font-size:9pt;
+	  -fx-font-weight:bold; 
+    -fx-font-family:Consolas;	    
+}
+
+JFXButton{
+	-fx-text-fill:black; 
+	-fx-cursor: hand;
+    -fx-font-size: 10pt;
+    -fx-font-family: Roboto; 
+}
+JFXButton:hover{
+	-fx-text-fill:#0000ff;
+	
+}
+
+
+
+
+
